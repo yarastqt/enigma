@@ -4,7 +4,7 @@ export type Rotors = {
   [key: number]: Alphabet
 }
 
-export const rotors: Rotors = {
+export const rotorsSettings: Rotors = {
   1: [
     'E', 'K', 'M', 'F', 'L', 'G', 'D', 'Q', 'V',
     'Z', 'N', 'T', 'O', 'W', 'Y', 'H', 'X', 'U',
