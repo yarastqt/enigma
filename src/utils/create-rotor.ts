@@ -1,4 +1,4 @@
-import { Alphabet } from '../constants/alphabet'
+import { Alphabet, alphabet } from '../constants/alphabet'
 import { Rotors } from '../constants/rotors'
 
 export type Rotor = {
@@ -16,4 +16,8 @@ export function createRotor(rotorSettings: Alphabet, alphabet: Alphabet): Rotor 
     }
     return rotor
   }, {})
+}
+
+export function createRotorEnchance(settings: Alphabet) {
+  return createRotor(settings, alphabet)
 }
