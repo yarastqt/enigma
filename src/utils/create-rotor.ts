@@ -1,14 +1,14 @@
-import { Alphabet, alphabet } from '../constants/alphabet'
+import { alphabet } from '../constants/alphabet'
 import { Rotors } from '../constants/rotors'
 
 export type Rotor = {
-  [key: string]: {
+  [key: number]: {
     char: string
     link: string
   }
 }
 
-export function createRotor(rotorSettings: Alphabet, alphabet: Alphabet): Rotor {
+export function createRotor(rotorSettings: string[], alphabet: string[]): Rotor {
   return rotorSettings.reduce((rotor, char, index) => {
     rotor[index] = {
       char: alphabet[index],
@@ -18,6 +18,6 @@ export function createRotor(rotorSettings: Alphabet, alphabet: Alphabet): Rotor 
   }, {})
 }
 
-export function createRotorEnchance(settings: Alphabet) {
+export function createRotorEnchance(settings: string[]) {
   return createRotor(settings, alphabet)
 }
