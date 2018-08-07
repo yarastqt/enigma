@@ -1,10 +1,7 @@
-export type Rotor = {
-  name: string,
-  label: string,
-  wiring: string[],
-}
+import { CipherDetail } from './shared'
 
-export const rotors: Rotor[] = [
+
+export const rotors: CipherDetail[] = [
   {
     name: 'I',
     label: 'I',
@@ -33,7 +30,3 @@ export const rotors: Rotor[] = [
     ],
   },
 ]
-
-export const getRotorByName = (name: string, rotors: Rotor[]) => {
-  return rotors.find((rotor) => rotor.name === name)
-}
