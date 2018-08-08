@@ -6,9 +6,9 @@ export const reflectors: CipherDetail[] = [
     name: 'UKW-B',
     label: 'UKW B',
     wiring: [
-      'y', 'r', 'u', 'h', 'q', 's', 'l', 'd', 'p',
-      'x', 'n', 'g', 'o', 'k', 'm', 'i', 'e', 'b',
-      'f', 'z', 'c', 'w', 'v', 'j', 'a', 't',
+      't', 'e', 'w', 'l', 'b', 'z', 'n', 'u', 'm',
+      'v', 'o', 'd', 'i', 'g', 'k', 'x', 's', 'y',
+      'q', 'a', 'h', 'j', 'c', 'p', 'r', 'f'
     ]
   }
 ]
